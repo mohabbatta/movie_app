@@ -5,12 +5,11 @@ A new Flutter project.
 ## Getting Started
 
 This project is a starting point for a Flutter application.
+## movie app u
 
-A few resources to get you started if this is your first Flutter project:
+![9c25b5d9-fe69-4cc5-9b34-bb728f60cdfd](https://user-images.githubusercontent.com/44276926/126010416-7815fa9f-9f4f-4d72-9cb9-51c6e37c2547.jpeg)
+![a0aa4427-5c2f-46a4-aacb-6382265c1fcc](https://user-images.githubusercontent.com/44276926/126010428-efa2afd8-2358-4745-a94f-efd6036c358f.jpeg)
+![678b6c7d-db41-4df0-a541-f1026b4763e5](https://user-images.githubusercontent.com/44276926/126010432-ae28d902-75dd-447a-b428-c47446126504.jpeg)
+![a92633f3-3e49-4838-a87c-1a69dbbb560f](https://user-images.githubusercontent.com/44276926/126010435-671ec2d4-81f9-4485-849c-44781d5b435a.jpeg)
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
