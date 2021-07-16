@@ -39,16 +39,13 @@ import 'package:flutter/material.dart';
 class ExceptionIndicator extends StatelessWidget {
   const ExceptionIndicator({
     @required this.title,
-    @required this.assetName,
     this.message,
     this.onTryAgain,
     Key key,
   })  : assert(title != null),
-        assert(assetName != null),
         super(key: key);
   final String title;
   final String message;
-  final String assetName;
   final VoidCallback onTryAgain;
 
   @override
@@ -57,9 +54,7 @@ class ExceptionIndicator extends StatelessWidget {
           padding: const EdgeInsets.symmetric(vertical: 32, horizontal: 16),
           child: Column(
             children: [
-              Image.asset(
-                assetName,
-              ),
+              Icon(Icons.error),
               const SizedBox(
                 height: 32,
               ),

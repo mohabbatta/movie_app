@@ -1,0 +1,46 @@
+{
+  "project_info": {
+    "project_number": "907018794628",
+    "project_id": "movie-appgain",
+    "storage_bucket": "movie-appgain.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:907018794628:android:53d08349e2dc21f047f4d1",
+        "android_client_info": {
+          "package_name": "com.example.movie_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "907018794628-6rfutvdrolep5kjb2i82hb5aft7cksks.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7dPc-XJooMYyMfBDrKasZpaqXvu5WSAw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "907018794628-6rfutvdrolep5kjb2i82hb5aft7cksks.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "907018794628-0rg8g9t253umhf8c1bjto1k17vafggh8.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.example.movieApp"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:movie_app/bloc/deep_link_bloc.dart';
+import 'package:movie_app/ui/home_view/paged_movies_listView.dart';
 import 'package:movie_app/ui/movie_details/movie_detail.dart';
 import 'package:provider/provider.dart';
+import 'dart:developer' as developer;
 
-class PocWidget extends StatelessWidget {
+
+class InitPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     DeepLinkBloc _bloc = Provider.of<DeepLinkBloc>(context);
@@ -12,6 +15,11 @@ class PocWidget extends StatelessWidget {
       builder: (context, snapshot) {
         if (snapshot.hasData) {
           var data = snapshot.data;
+          developer.log(
+            'log me',
+            name: 'deep link open',
+            error: snapshot.data,
+          );
           var segments = data.split("/");
 
           if (segments.contains("details_screen")) {
@@ -20,9 +28,9 @@ class PocWidget extends StatelessWidget {
             return MovieDetail(id: id);
           }
           print(snapshot.data);
-          return Center(child: Text("${snapshot.data}"));
+          return PagedMoviesListView();
         }
-        return Center(child: Text("no thang"));
+        return PagedMoviesListView();
       },
     );
   }

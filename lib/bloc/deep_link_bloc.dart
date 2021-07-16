@@ -7,10 +7,8 @@ abstract class Bloc {
 }
 
 class DeepLinkBloc extends Bloc {
-  //Event Channel creation
-  static const stream = const EventChannel('http.example.com/events');
 
-  //Method channel creation
+  static const stream = const EventChannel('http.example.com/events');
   static const platform = const MethodChannel('http.example.com/channel');
 
   StreamController<String> _stateController =
@@ -20,17 +18,12 @@ class DeepLinkBloc extends Bloc {
 
   Sink<String> get stateSink => _stateController.sink;
 
-  //Adding the listener into contructor
   DeepLinkBloc() {
-    //Checking application start by deep link
     startUri().then(_onRedirected);
-    //Checking broadcast stream, if deep link was clicked in opened appication
     stream.receiveBroadcastStream().listen((d) => _onRedirected(d));
   }
 
   _onRedirected(String uri) {
-    // Here can be any uri analysis, checking tokens etc, if it’s necessary
-    // Throw deep link URI into the BloC's stream
     stateSink.add(uri);
   }
 
